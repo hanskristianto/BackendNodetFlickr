@@ -12,7 +12,7 @@ router.post("/login", (req, res)=>{
     mainModel.login(data, (response, code)=>{
         
         if(code === 1){
-            console.log(response)
+            // console.log(response)
             let r = {
                 error : false,
                 data : {

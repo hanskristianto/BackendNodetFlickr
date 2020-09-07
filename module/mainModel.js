@@ -7,7 +7,7 @@ const mainModel = {
     login : (data, callback)=>{
 
         var query = db.query("SELECT * FROM users WHERE email = '"+data.email+"' AND password = '"+data.password+"'", (err, result, fields)=>{
-            
+
             if(!err  && result[0]){
 
                 callback(result[0], 1)
